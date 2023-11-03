@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "target": "es5",
-    "module": "commonjs",
+    "module": "esnext",
     "noImplicitAny": true,
     "outDir": "dist",
     "rootDir": ".",
@@ -12,10 +12,24 @@
     ],
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "exclude": [
     "dist",
     "node_modules"
+  ],
+  "include": [
+    "src"
   ]
 }
